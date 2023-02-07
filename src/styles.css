@@ -33,7 +33,7 @@ select {
 
 .city {
   padding: 10px;
-  border-bottom: 1px rgba(255, 255, 255, 0.4) dashed;
+  border-bottom: 2px rgba(255, 255, 255, 0.4) dashed;
 }
 
 .city:last-child {
@@ -60,4 +60,15 @@ footer {
 
 small {
   font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  color: rgba(58, 58, 58, 0.6);
+}
+a:visited {
+  color: rgb(53, 53, 53);
 }

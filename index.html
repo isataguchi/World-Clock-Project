@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>🕒World Clock Project</h1>
+      <a href="index.html"> <h1>🕒World Clock Project</h1></a>
       <select id="city">
         <option value="">Select a city...</option>
         <option value="current">Current location</option>
@@ -29,14 +29,23 @@
         <option value="Asia/Seoul">Seoul</option>
         <option value="Asia/Tokyo">Tokyo</option>
       </select>
-      <div id="cities">
-        </div>
-        <div class="city" id="london">
-          <h2>London</h2>
-          <div class="date">February 7th 2023</div>
-          <div class="time">23:09:00</div>
-        </div>
+      <div id="cities"></div>
+      <div class="city" id="london">
+        <h2>London</h2>
+        <div class="date">February 7th 2023</div>
+        <div class="time">23:09:00</div>
+      </div>
 
+      <div class="city" id="new-york">
+        <h2>New York</h2>
+        <div class="date">February 7th 2023</div>
+        <div class="time">23:09:00</div>
+      </div>
+
+      <div class="city" id="paris">
+        <h2>Paris</h2>
+        <div class="date">February 7th 2023</div>
+        <div class="time">23:09:00</div>
       </div>
     </div>
     <footer>

@@ -10,6 +10,29 @@ function updateTime() {
       "hh:mm:ss[<small>]A[</small>]"
     );
   }
+
+  let newYorkElement = document.querySelector("#new-york");
+  if (newYorkElement) {
+    let newYorkDateElement = newYorkElement.querySelector(".date");
+    let newYorkTimeELement = newYorkElement.querySelector(".time");
+    let newYorkTime = moment().tz("America/New_York");
+
+    newYorkDateElement.innerHTML = newYorkTime.format("MMMM Do YYYY");
+    newYorkTimeELement.innerHTML = newYorkTime.format(
+      "hh:mm:ss[<small>]A[</small>]"
+    );
+  }
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+    let parisTime = moment().tz("Europe/Paris");
+
+    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
+      "hh:mm:ss[<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
@@ -22,7 +45,6 @@ function updateCity(event) {
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML += `
   <div class="city">
-  <div>
           <h2>${cityName}</h2>
           <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
